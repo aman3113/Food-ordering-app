@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Order Here</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jimmy's Dinner</h1>
+      <h3>The best burgers and pizzas in town</h3>
+    </header>
+
+    <div class="feed-container">
+      <!-- feed-content -->
+    </div>
+    <div id="your-order"></div>
+    <div class="order-container hidden">
+      <h2>Your Order</h2>
+      <div class="order-feed">
+        <!-- order-feed -->
+      </div>
+      <div class="horizontal"></div>
+      <div class="total">
+        <span>Total Price:</span>
+        <div class="total-price"></div>
+      </div>
+      <div class="order-btn">
+        <button id="complete-order">Complete order</button>
+      </div>
+    </div>
+
+    <!-- payment-dialog -->
+    <div class="payment-container hidden">
+      <span id="close-modal">×</span>
+      <form id="payment-form">
+        <h2>Enter Card Details</h2>
+        <input
+          type="text"
+          id="input-name"
+          placeholder="Enter your Name"
+          required
+        />
+        <input type="number" placeholder="Enter Card Number" required />
+        <input type="text" placeholder="Enter CVV" required />
+        <input type="submit" value="Pay" id="pay-btn" />
+      </form>
+    </div>
+
+    <div class="output hidden"></div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
